@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center items-center h-[800px] text-5xl border-b-4 border-b-black">
-        HERO
+        <Image alt="Foto de premio" src="/ImagenEjemplo.png" width={1440} height={810}></Image>
       </div>
       <div className="flex justify-center items-center h-[800px] text-5xl border-b-4 border-b-black">
         FEATURED
