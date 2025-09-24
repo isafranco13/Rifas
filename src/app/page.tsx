@@ -32,12 +32,12 @@ export default function Home() {
   <div className="bg-[#007bff] rounded-lg p-6 shadow-md flex items-center">
     
     {/* Contenedor para la imagen, alineado a la izquierda */}
-    <div className="flex-shrink-0 mr-6">
+    <div className="flex-shrink-0 mr-8">
       <Image
         src="/ImagenEjemplo.png"
         alt="Imagen del Anuncio"
-        width={200}
-        height={200}
+        width={500}
+        height={500}
         className="rounded-lg object-cover"
       />
     </div>
@@ -48,7 +48,10 @@ export default function Home() {
       <p className="text-gray-700">
         Participa en nuestra próxima rifa para tener la oportunidad de ganar un premio increíble.
         ¡No te lo pierdas!
-      </p>
+      </p><br />
+      <Link href="/boletos" className="bg-[#F1F1F1] text-black font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-white-100 transition-colors duration-300">
+          Comprar Boletos
+        </Link>
     </div>
   </div>
 </div>
