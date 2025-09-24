@@ -10,25 +10,25 @@ const Footer = () => {
           {/* Social Media Section */}
           <div className="mb-9 md:mb-0">
             <h2 className="text-lg font-semibold mb-2">Contáctanos</h2><br />
-            <div className="flex space-x-7 text-center place-items-center ">
+            <div className="flex space-x-7 justify-center items-center">
               <Link href="https://www.instagram.com" className="hover:text-gray-400">
-                <div className="bg-[#007bff] rounded-full h-20 w-20 ">
+                <div className="bg-[#007bff] rounded-full h-20 w-20 flex justify-center items-center ">
                   <Image src="/whatsapp.png" alt="whatsapp"
                 height={60} width={60}  className=""></Image>
                 </div>
                 
               </Link>
               <Link href="https://www.facebook.com" className="hover:text-gray-400">
-                <div className="bg-[#007bff] rounded-full">
+                <div className="bg-[#007bff] rounded-full h-20 w-20 flex justify-center items-center">
                    <Image src="/facebook.png" alt="Facebook"
-                height={40} width={40} ></Image>
+                height={60} width={60} ></Image>
                 </div>
                
               </Link>
               <Link href="https://www.instagram.com" className="hover:text-gray-400">
-                <div className="bg-[#007bff] rounded-full">
+                <div className="bg-[#007bff] rounded-full h-20 w-20 flex justify-center items-center">
                   <Image src="/Instagram.png" alt="Instagram"
-                height={40} width={40} ></Image>
+                height={60} width={60} ></Image>
                 </div>
                 
               </Link>
