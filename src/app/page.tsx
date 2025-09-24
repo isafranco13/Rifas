@@ -1,5 +1,25 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import FAQCARD from './components/FAQCard';
+
+const faqs = [
+  {
+    id: 1,
+    question: "¿Cómo se eligen a los ganadores?",
+    answer: "Todos nuestros sorteos se realizan en base a la **Lotería Nacional para la Asistencia Pública mexicana.** ​El ganador de Sorteos Ejemplares será el participante cuyo número de boleto coincida con las últimas cifras del primer premio ganador de la Lotería Nacional (las fechas serán publicadas en nuestra página oficial)."
+  },
+  {
+    id: 2,
+    question: "¿Dónde se públican a los ganadores?",
+    answer: "En nuestra página oficial de Facebook **pagina de Facebook** puedes encontrar todos y cada uno de nuestros sorteos anteriores, así como las transmisiones en vivo con Lotería Nacional y las entregas de premios a los ganadores!"
+  },
+  {
+    id: 3,
+    question: "¿Qué sucede cuando el número ganador es un boleto no vendido?",
+    answer: "Se sigue la misma dinámica en otra fecha cercana (se anunciara de igual forma y se hará el correspondiente transmisión en vivo) para anunciar al ganador)."
+  }
+];
 
 export default function Home() {
   return (
@@ -44,7 +64,7 @@ export default function Home() {
 
     {/* Contenedor para el texto de información, a la derecha */}
     <div className="flex-grow">
-      <h2 className="text-2xl font-semibold mb-2">¡Gran Anuncio!</h2>
+      <h2 className="text-2xl font-semibold mb-2 text-white">¡Gran Anuncio!</h2>
       <p className="text-gray-700">
         Participa en nuestra próxima rifa para tener la oportunidad de ganar un premio increíble.
         ¡No te lo pierdas!
@@ -56,7 +76,13 @@ export default function Home() {
   </div>
 </div>
       <div className="flex justify-center items-center h-[800px] text-5xl">
-        Preguntas Frecuentes
+        <div className="w- full max-w-2xl p-4">
+          <h1 className="text-4xl font-bold text-center mb-9 text-gray-800">Preguntas Frecuentes</h1>
+        
+        {faqs.map(faq => (
+          <FAQCARD key={faq.id} question={faq.question} answer={faq.answer} />
+        ))}
+        </div>
       </div>
     </>
 
