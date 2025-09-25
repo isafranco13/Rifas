@@ -15,16 +15,16 @@ export default function Navbar() {
           <Link href="/#inicio" >
             Inicio
           </Link>
-          <Link href="/link2" >
+          <Link href="/#preguntasFrecuentes" >
             Preguntas Frecuentes
           </Link>
-          <Link href="/link3" >
+          <Link href="/#final" >
             Contacto
           </Link>
            <Link href="/link3">
             Métodos de Pago 
           </Link>
-           <Link href="/link3" >
+           <Link href="/boletos" >
             Comprar Boletos
           </Link>
         </section>

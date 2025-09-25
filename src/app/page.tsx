@@ -75,10 +75,10 @@ export default function Home() {
     </div>
   </div>
 </div>
-      <div className="flex justify-center items-center h-[800px] text-5xl">
+      <div className="flex justify-center items-center h-[800px] text-5xl" id="preguntasFrecuentes">
         <div className="w- full max-w-2xl p-4">
           <h1 className="text-4xl font-bold text-center mb-9 text-gray-800">Preguntas Frecuentes</h1>
-        
+        <div id="final"></div>
         {faqs.map(faq => (
           <FAQCARD key={faq.id} question={faq.question} answer={faq.answer} />
         ))}
