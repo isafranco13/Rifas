@@ -15,13 +15,19 @@ export default function BoletosBonos(){
         className={`${styles.tarjetaExp} ${seccionAbierta === 'boletos' ? styles.abierta : ''}`}
         onClick={() => toggleSeccion('boletos')}
       >
-        <h2 className={styles.tituloExp}>Boletos <span className={styles.icono}>{seccionAbierta === 'boletos' ? '▲' : '▼'}</span></h2>
+        <h2 className={styles.tituloExp}>BOLETOS <span className={styles.icono}>{seccionAbierta === 'boletos' ? '▲' : '▼'}</span></h2>
         
         {seccionAbierta === 'boletos' && (
           <div className={styles.contenidoExp}>
-            <p><strong>Información de Boletos:</strong></p>
             <ul>
-              <li>Precios por zona: VIP, General.</li>
+              <li><strong>1</strong> BOLETO POR $$</li>
+              <li><strong>10</strong> BOLETOS POR $$</li>
+              <li><strong>20</strong> BOLETOS POR $$</li>
+              <li><strong>50</strong> BOLETOS POR $$</li>
+              <li><strong>100</strong> BOLETOS POR $$</li>
+              <li><strong>200</strong> BOLETOS POR $$</li>
+              <li><strong>300</strong> BOLETOS POR $$</li>
+              <li><strong>500</strong> BOLETOS POR $$</li>
               {/* ... más información ... */}
             </ul>
           </div>
@@ -33,7 +39,7 @@ export default function BoletosBonos(){
         className={`${styles.tarjetaExp} ${seccionAbierta === 'bonos' ? styles.abierta : ''}`}
         onClick={() => toggleSeccion('bonos')}
       >
-        <h2 className={styles.tituloExp}>Bonos y Promociones <span className={styles.icono}>{seccionAbierta === 'bonos' ? '▲' : '▼'}</span></h2>
+        <h2 className={styles.tituloExp}>BONOS <span className={styles.icono}>{seccionAbierta === 'bonos' ? '▲' : '▼'}</span></h2>
         
         {seccionAbierta === 'bonos' && (
           <div className={styles.contenidoExp}>
