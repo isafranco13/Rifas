@@ -43,9 +43,8 @@ export default function BoletosBonos(){
         
         {seccionAbierta === 'bonos' && (
           <div className={styles.contenidoExp}>
-            <p><strong>Información de Bonos:</strong></p>
             <ul>
-              <li>Beneficios del Bono Anual o de Temporada.</li>
+              <li>Bonos de boletos aqui</li>
               {/* ... más información ... */}
             </ul>
           </div>
