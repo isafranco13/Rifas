@@ -1,6 +1,10 @@
-export default function AcercaDePage() {
+
+import BoletosBonos from './BoletosBonos';
+
+export default function boletos() {
   return (
-    <div>
-    </div>
+    <main>
+      <BoletosBonos/>
+    </main>
   );
 }
