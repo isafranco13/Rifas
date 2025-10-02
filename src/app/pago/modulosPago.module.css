@@ -1,0 +1,57 @@
+/* app/boletos/BoletosBonos.module.css */
+
+.contenedorAcordeon {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.tarjetaExp {
+  background-color: #007bff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.tarjetaExp:hover {
+  background-color: #007bff;
+}
+
+.tituloExp {
+  padding: 15px 20px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  color: #f0f0f0;
+}
+
+.icono {
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+}
+
+/* El contenido del acordeón */
+.contenidoExp {
+  padding: 0 20px 20px 20px;
+  max-height: 500px; /* Necesario para la animación */
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+  background-color: #007bff;
+  color: #f0f0f0;
+}
+
+/* Estilo para la tarjeta cuando está abierta */
+.abierta {
+  border-color: #0070f3;
+  box-shadow: 0 4px 8px rgba(0, 112, 243, 0.1);
+  
+}
+
+/* Rotar el ícono de flecha cuando está abierto */
+.abierta .icono {
+  transform: rotate(180deg);
+}
