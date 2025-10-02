@@ -20,16 +20,17 @@ export default function BoletosBonos(){
         
         {seccionAbierta === 'boletos' && (
           <div className={styles.contenidoExp}>
+            <h3>TRANSFERENCIAS Y CAJERO</h3>
             <ul>
-              <li><strong>1</strong> BOLETO POR $$</li>
-              <li><strong>10</strong> BOLETOS POR $$</li>
-              <li><strong>20</strong> BOLETOS POR $$</li>
-              <li><strong>50</strong> BOLETOS POR $$</li>
-              <li><strong>100</strong> BOLETOS POR $$</li>
-              <li><strong>200</strong> BOLETOS POR $$</li>
-              <li><strong>300</strong> BOLETOS POR $$</li>
-              <li><strong>500</strong> BOLETOS POR $$</li>
-              {/* ... más información ... */}
+              <li><Image src="/banco.png" alt="banco"
+                height={45} width={45}></Image>
+                Nombre de la cuenta <br />5555 5555 5555 5555 55</li>
+              <li><Image src="/banco.png" alt="banco"
+                height={45} width={45}></Image>
+                Nombre de la cuenta <br />5555 5555 5555 5555 55</li>
+              <li><Image src="/banco.png" alt="banco"
+                height={45} width={45}></Image>
+                Nombre de la cuenta <br />5555 5555 5555 5555 55</li>
             </ul>
           </div>
         )}
@@ -40,12 +41,20 @@ export default function BoletosBonos(){
         className={`${styles.tarjetaExp} ${seccionAbierta === 'bonos' ? styles.abierta : ''}`}
         onClick={() => toggleSeccion('bonos')}
       >
-        <h2 className={styles.tituloExp}>BONOS <span className={styles.icono}>{seccionAbierta === 'bonos' ? '▲' : '▼'}</span></h2>
+        <h2 className={styles.tituloExp}>PAGO EN OXXO, 7ELEVEN, FARMACIAS <span className={styles.icono}>{seccionAbierta === 'bonos' ? '▲' : '▼'}</span></h2>
         
         {seccionAbierta === 'bonos' && (
           <div className={styles.contenidoExp}>
             <ul>
-              <li>Bonos de boletos aqui</li>
+              <li><Image src="/farmacia.png" alt="banco"
+                height={45} width={45}></Image>
+                Nombre de la cuenta <br />5555 5555 5555 5555 55</li>
+                <li><Image src="/farmacia.png" alt="banco"
+                height={45} width={45}></Image>
+                Nombre de la cuenta <br />5555 5555 5555 5555 55</li>
+                <li><Image src="/farmacia.png" alt="banco"
+                height={45} width={45}></Image>
+                Nombre de la cuenta <br />5555 5555 5555 5555 55</li>
               {/* ... más información ... */}
             </ul>
           </div>

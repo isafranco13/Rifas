@@ -21,7 +21,7 @@ export default function Navbar() {
           <Link href="/#final" >
             Contacto
           </Link>
-           <Link href="/link3">
+           <Link href="/pago">
             Métodos de Pago 
           </Link>
            <Link href="/boletos" >
