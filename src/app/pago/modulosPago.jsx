@@ -16,11 +16,11 @@ export default function BoletosBonos(){
         className={`${styles.tarjetaExp} ${seccionAbierta === 'boletos' ? styles.abierta : ''}`}
         onClick={() => toggleSeccion('boletos')}
       >
-        <h2 className={styles.tituloExp}>BOLETOS <span className={styles.icono}>{seccionAbierta === 'boletos' ? '▲' : '▼'}</span></h2>
+        <h2 className={styles.tituloExp}>TRANSFERENCIAS Y CAJERO <span className={styles.icono}>{seccionAbierta === 'boletos' ? '▲' : '▼'}</span></h2>
         
         {seccionAbierta === 'boletos' && (
           <div className={styles.contenidoExp}>
-            <h3>TRANSFERENCIAS Y CAJERO</h3>
+            {/* <h3>TRANSFERENCIAS Y CAJERO</h3> */}
             <ul>
               <li><Image src="/banco.png" alt="banco"
                 height={45} width={45}></Image>
